@@ -42,13 +42,13 @@ section {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;              /* ⬅ reduced gap */
+  gap: 20px;              /* ⬅ reduced gap */
   align-items: center;
 }
 
 .hero img {
   width: 50%;
-  height: auto;
+  justify-self: end;
   border-radius: 6px;
 }
 
