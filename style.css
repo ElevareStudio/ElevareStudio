@@ -5,6 +5,7 @@ section{padding:60px 8%}
 .hero-overlay{position:absolute;top:30%;right:8%;background:#000c;color:#fff;padding:30px}
 .about-wrap,.offerings-wrap,.contact-wrap{display:flex;gap:40px;align-items:center}
 .about img,.offerings img{width:50%}
+.center-heading {text-align: center;}
 footer{text-align:center;padding:20px;background:#111;color:#fff}
 @media(max-width:900px){
 .about-wrap,.offerings-wrap,.contact-wrap{flex-direction:column}
