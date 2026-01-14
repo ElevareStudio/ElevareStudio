@@ -27,11 +27,12 @@ section {
 }
 
 /* HERO */
-.hero-wrap {
+.hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+  padding: 70px 8%;
 }
 
 .hero img {
