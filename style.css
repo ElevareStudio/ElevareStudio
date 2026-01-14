@@ -42,7 +42,7 @@ section {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;              /* ⬅ reduced gap */
+  gap: 24px;              /* ⬅ reduced gap */
   align-items: center;
 }
 
