@@ -1,62 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elevare Studio | Pilates & Yoga</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      margin:0;
+      font-family:'Segoe UI',Arial,sans-serif;
+      color:#2c2c2c;
+      line-height:1.6;
+    }
+    h1,h2,h3{margin:0 0 12px}
+    section{padding:70px 8%}
+
+    /* HERO */
+    .hero{position:relative;height:85vh}
+    .hero img{width:100%;height:100%;object-fit:cover}
+    .hero-overlay{
+      position:absolute;
+      top:50%;
+      right:8%;
+      transform:translateY(-50%);
+      background:rgba(0,0,0,0.65);
+      color:#fff;
+      padding:30px;
+      max-width:380px;
+    }
+
+    /* SHARED OVERLAY CARD */
+    .overlay-card{
+      background:#fff;
+      padding:35px;
+      max-width:520px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.12);
+      z-index:2;
+    }
+
+    /* ABOUT */
+    .about{background:#fafafa;position:relative}
+    .about-wrap{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+    }
+    .about img{
+      width:65%;
+      justify-self:end;
+      border-radius:6px;
+    }
+
+    /* OFFERINGS */
+    .offerings{position:relative}
+    .offerings-wrap{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+    }
+    .offerings img{
+      width:65%;
+      justify-self:start;
+      border-radius:6px;
+    }
+
+    /* CONTACT */
+    .contact{background:#111;color:#fff}
+    .contact-wrap{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+    }
+    .contact img{
+      max-width:220px;
+      justify-self:end;
+    }
+
+    footer{
+      background:#000;
+      color:#aaa;
+      text-align:center;
+      padding:18px;
+      font-size:14px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .hero-overlay{right:5%;left:5%;max-width:none}
+      .about-wrap,.offerings-wrap,.contact-wrap{
+        grid-template-columns:1fr;
+        gap:30px;
+      }
+      .about img,.offerings img{
+        width:100%;
+        justify-self:center;
+      }
+      .contact img{justify-self:start}
+    }
+  </style>
 </head>
 <body>
 
 <section class="hero">
-  <img src="images/hero.jpg" alt="Elevare Studio Entrance">
+  <img src="images/hero.jpg" alt="Elevare Studio Entrance" />
   <div class="hero-overlay">
-    <h1>TRANSFORM YOUR BODY<br>WITH PILATES & YOGA</h1>
-    <p>Experience strength and flexibility with expert Pilates and Yoga training.</p>
-    <span>+91 9084362271 · +91 7388063012</span>
+    <h1>Transform Your Body<br/>With Pilates & Yoga</h1>
+    <p>Strength • Alignment • Mindful Movement</p>
+    <strong>+91 9084362271 · +91 7388063012</strong>
   </div>
 </section>
 
 <section class="about">
-  <h2>ABOUT ELEVARE STUDIO</h2>
+  <h2>About Elevare Studio</h2>
   <div class="about-wrap">
-    <img src="images/about.jpg">
-    <div>
+    <div class="overlay-card">
       <h3>Our Mission</h3>
       <p>
-        Elevare brings a mindful, movement-driven approach to Pilates, Yoga,
-        and Aerial Yoga—combining strength, alignment, and breathwork.
+        Elevare Studio is designed as a calm, premium space for Pilates, Yoga and
+        Aerial Yoga. Our focus is on posture correction, core strength, mobility
+        and holistic well-being.
       </p>
     </div>
+    <img src="images/about.jpg" alt="Elevare Studio Interior" />
   </div>
 </section>
 
 <section class="offerings">
-  <h2>OUR OFFERINGS</h2>
+  <h2>Our Offerings</h2>
   <div class="offerings-wrap">
-    <div>
-      <h3>Pilates</h3><p>Build strength and alignment.</p>
-      <h3>Yoga</h3><p>Enhance flexibility and balance.</p>
-      <h3>Aerial Yoga</h3><p>Supported inversions and flow.</p>
+    <img src="images/offerings.jpg" alt="Pilates Reformer" />
+    <div class="overlay-card">
+      <h3>Pilates</h3>
+      <p>Reformer and mat Pilates focused on strength, posture and flexibility.</p>
+      <h3>Yoga</h3>
+      <p>Breath-led practices for balance, calm and mobility.</p>
+      <h3>Aerial Yoga</h3>
+      <p>Supported inversions and deeper stretches using aerial hammocks.</p>
     </div>
-    <img src="images/offerings.jpg">
   </div>
 </section>
 
 <section class="contact">
-  <h2>CONTACT US</h2>
+  <h2>Visit Us</h2>
   <div class="contact-wrap">
     <div>
       <p><strong>Elevare Studio</strong></p>
-      <p>Meerut, Uttar Pradesh</p>
+      <p>305, 2nd Floor, Kiran Villa, Saket (Above Geetanjali Studio),<br>University Road, Meerut</p>
       <p>Email: elevarestudio.in@gmail.com</p>
       <p>Instagram: @elevarestudio.in</p>
     </div>
-    <img src="images/logo.png">
+    <img src="images/logo.png" alt="Elevare Studio Logo" />
   </div>
 </section>
 
-<footer>© 2026 Elevare Studio</footer>
+<footer>© 2026 Elevare Studio. All Rights Reserved.</footer>
 
 </body>
 </html>
