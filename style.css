@@ -11,14 +11,25 @@ h1, h2, h3 {
 }
 
 h2 {
-  text-align: left;
   letter-spacing: 1px;
 }
+
+/* SECTION TITLES */
 .section-title {
   text-align: center;
-  font-size: 34px;      /* one size bigger */
+  font-size: 34px;
   letter-spacing: 1.5px;
   margin-bottom: 20px;
+}
+
+/* SUBTITLE */
+.section-subtitle {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #8c8c8c;
+  margin-bottom: 50px;
+  text-transform: uppercase;
 }
 
 /* SECTIONS */
@@ -32,12 +43,11 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-  padding: 70px 8%;
 }
 
 .hero img {
-  width: 100%;
-  height: auto; /* no stretching */
+  width: 50%;          /* ⬅️ CHANGED from 65% */
+  height: auto;
   border-radius: 6px;
 }
 
@@ -59,6 +69,90 @@ section {
   font-weight: 600;
 }
 
-/* CENTER HEADING */
-.center-heading {
+/* CARD */
+.overlay-card {
+  background: #fff;
+  padding: 35px;
+  max-width: 520px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* ABOUT */
+.about {
+  background: #fafafa;
+}
+
+.about-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about img {
+  width: 50%;          /* ⬅️ CHANGED */
+  justify-self: end;
+  border-radius: 6px;
+}
+
+/* OFFERINGS */
+.offerings-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.offerings img {
+  width: 50%;          /* ⬅️ CHANGED */
+  justify-self: start;
+  border-radius: 6px;
+}
+
+/* CONTACT */
+.contact {
+  background: #111;
+  color: #fff;
+}
+
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.contact img {
+  max-width: 220px;
+  justify-self: end;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #aaa;
   text-align: center;
+  padding: 18px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero,
+  .about-wrap,
+  .offerings-wrap,
+  .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .hero img,
+  .about img,
+  .offerings img {
+    width: 100%;
+    justify-self: center;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+}
